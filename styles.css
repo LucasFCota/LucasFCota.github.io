@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(90, 65, 0);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 65, 90);
+    height: 130px;
+}
+
+posts{
+    display: block;
+}
+
+item{
+    display: block;
+    height: 80vh;
+    padding: 20px;
+    background-color: #bbb;
+}
+.impar .imagem, .impar .texto, .impar .quadrados{
+    float: left;
+    text-align: left;
+    margin-right: 20px;
+}
+.par{
+    background-color: #999;
+}
+.par .imagem, .par .texto, .par .quadrados{
+    float: right;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.imagem{
+    height: 100%;
+}
+.quadrados{
+    width: 100px;
+}
+.quadrados img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    background-color: #FFF;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font: bold 44pt Georgia;
+    color: #eee;
+}
+
+h2{
+    font: bold 20pt Georgia;
+    color: black;
+}
+
+h3{
+    font: bold 14pt Georgia;
+    color: black;
+}
+
+h4{
+    font: italic 14pt Georgia;
+    color: black;
+}
+h5{
+    font: normal 10pt Georgia;
+    color: black;
+}
+
+/*
+lembrete{
+    float: right ou left; diagramação imagem-texto
+    clear: right ou left ou both; desfaz o efeito do float de outro sobre ele
+    overflow: auto; os elementos com float absorvem o width ou height do parceiro
+
+    display: inline; um elemento dentro de uma linha
+    block; um elemento com sua própria linha
+    none; o elemento some
+
+    box-sizing: border-box ou padding-box ou content-box;
+    //width e height são do elemento+padding+borda
+    
+    position: absolute ou relative ou fixed;para mover independentemente
+    //static desativa
+    z-index: 1 ou 2 ou ...; ordena qual camada fica na frente
+}
+
+
+@media screen and (min-width: 900px) {
+    article {
+      padding: 1rem 3rem;
+    }
+  }
