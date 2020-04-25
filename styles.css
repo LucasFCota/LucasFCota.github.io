@@ -1,13 +1,14 @@
 body{
     margin: 0;
+    font-size: 1.5vw;
 }
 
 header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(0, 65, 90);
-    height: 130px;
+    background: rgb(0, 79, 110);
+    height: 9vw;
 }
 
 posts{
@@ -16,34 +17,39 @@ posts{
 
 item{
     display: block;
-    height: 80vh;
-    padding: 20px;
-    background-color: #ddd;
+    height: 36vw;
+    padding: 1.5vw;
+    background-color: #eee;
 }
-.impar .imagem, .impar .texto, .impar .quadrados{
+.impar .imagem, .impar .quadrados{
     float: left;
-    text-align: left;
-    margin-right: 20px;
+    margin-right: 1.5vw;
 }
 .par{
-    background-color: #bbb;
+    background-color: #ddd;
 }
-.par .imagem, .par .texto, .par .quadrados{
+.par .imagem, .par .quadrados{
     float: right;
+    margin-left: 1.5vw;
+}
+.par .texto *{
     text-align: right;
-    margin-left: 20px;
+}
+.par .texto button{
+    float: right;
 }
 
 .imagem{
     height: 100%;
+    background-color: #fff;
 }
 .quadrados{
-    width: 100px;
+    width: 6.73vw;
 }
 .quadrados img{
-    height: 100px;
-    width: 100px;
-    margin-bottom: 10px;
+    height: 6.73vw;
+    width: 6.73vw;
+    margin-bottom: 0.2vw;
     background-color: #FFF;
 }
 
@@ -56,26 +62,26 @@ footer{
 }
 
 h1{
-    font: bold 44pt Georgia;
+    font: bold 4.5vw Georgia;
     color: #eee;
 }
 
 h2{
-    font: bold 20pt Georgia;
+    font: bold 3vw Georgia;
     color: black;
 }
 
 h3{
-    font: bold 14pt Georgia;
+    font: bold 1.5vw Georgia;
     color: black;
 }
 
 h4{
-    font: italic 14pt Georgia;
+    font: italic 1.5vw Georgia;
     color: black;
 }
 h5{
-    font: normal 10pt Georgia;
+    font: normal 1vw Georgia;
     color: #eee;
 }
 
@@ -98,8 +104,6 @@ lembrete{
 }
 
 
-@media screen and (min-width: 900px) {
-    article {
-      padding: 1rem 3rem;
-    }
+@media screen and (max-width: 600px) {
+
   }
